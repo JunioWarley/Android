@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&display=swap');
+
+@font-face{
+    font-family: 'idroid';
+    src: url('../ex02/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+:root {
+    --main-color: #3ddb8f7c;
+    --secondary-color: #a0ce95;
+    --tertiary-color: #54C6E1;
+    --quaternary-color: #3DDBC5;
+    --quinary-color: #3DDB5A;
+
+    --font-main: Arial, Verdana, helvetica, sans-serif;
+    --font-secondary: 'Bebas-neue', cursive;
+    --font-tertiary: 'idroid', cursive;
+}
+*{
+    margin: 0;
+    padding: 2px;
+}
+body {
+    background-color: var(--main-color);
+    font-family: var(--font-main);
+}
+a.externo::after {
+    content: "\1F517";
+    font-size: 0.8em;
+}
+main {
+    background-color: rgba(219, 199, 199, 0.514);
+    border-radius: 20px;
+    min-width: 300px;  
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 20px;
+}
+div.video {
+    background-color: var(--quaternary-color);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #888888;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+header {
+    background-image: linear-gradient(to bottom, var(--quaternary-color), var(--secondary-color));
+    font-family: var(--font-main);
+    min-height: 150px;
+    padding-top: 40px;
+}
+header {
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    margin-bottom: 20px;
+    font-family: var(--font-secondary);
+}
+nav {
+    background-color: var(--quaternary-color);  
+    text-align: center;
+}
+nav > a {
+    margin: 10px;
+    text-decoration: none;
+}
+nav > a:hover {
+    background-color: var(--quinary-color);
+    color: white;
+    border-radius: 20px;
+    transition-duration: .5s;
+}
+main > article> h2 {
+    background-image: linear-gradient(to bottom, var(--main-color), var(--quaternary-color));
+    font-family: var(--font-tertiary);
+    margin-bottom: 20px;
+    text-indent: 10px;
+}
+main a:hover {
+    background-color: var(--quinary-color);
+    
+}
+main a {
+    text-decoration: none;
+}
+p {
+    text-indent: 30px;
+}
+img {
+  display: block;        /* sai do fluxo inline para evitar o espacinho embaixo */
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin: 0 auto;        /* <<< esse par faz o centro acontecer */
+}
+
+aside {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #888888;
+}
+aside > h2 {
+    background-color: var(--quinary-color);
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 20px 20px 0px 0px;
+}
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: "\2714\00A0\00A0";
+}
+footer {
+    background-color: var(--quaternary-color);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+footer > p {
+    font-family: var(--font-secondary);
+}
+footer p>a:hover {
+    background-color: var(--quinary-color);
+    color: white;
+    border-radius: 20px;
+    transition-duration: .5s;
+}
